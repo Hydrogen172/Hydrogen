@@ -152,11 +152,6 @@
         .second-toggle input:checked + .slider:before {
             transform: translateX(26px);
         }
-        
-        /* Label style for toggle options */
-        .option-label {
-            margin: 0 10px;
-        }
     </style>
 </head>
 <body>
@@ -176,21 +171,21 @@
 
         <div class="second-toggle-container" id="secondToggleContainer" style="display: none;">
             <label class="toggle second-toggle" style="display: flex; align-items: center; justify-content: center;">
-                <span id="blobLabel" class="option-label" style="margin-right: 10px;">blob:https</span>
+                <span style="margin-right: 50px;">blob:https</span>
                 <input type="checkbox" id="launchOption">
                 <span class="slider"></span>
-                <span id="aboutLabel" class="option-label" style="margin-left: 10px;">about:blank</span>
+                <span style="margin-left: 50px;">about:blank</span>
             </label>
         </div>
         <h5>IF ABOUT:BLANK DOES NOT WORK, TRY BLOB:HTTPS</h5>
         <h5>RELOAD THE TAB AFTER ENABLING THE AUTO LAUNCH FEATURE</h5>
-        <h5>A downloadable version of Krypton is available <a href="https://drive.google.com/file/d/1QVogappMpLlwS243tmtaxCCmhwwwNpJt/view?usp=sharing" target="_blank">here</a></h5>
+        <h5>A downloadable version is available <a href="https://drive.google.com/file/d/1QVogappMpLlwS243tmtaxCCmhwwwNpJt/view?usp=sharing" target="_blank">here</a></h5>
         <br>
-        <img src="https://visit-counter.vercel.app/counter.png?page=https%3A%2F%2Fgohydrogen.pages.dev%2F&s=12&c=000000&bg=00000000&no=10&ff=electrolize&tb=&ta= Visits" alt="Visits">
+        <img src="https://visit-counter.vercel.app/counter.png?page=https%3A%2F%2Fkryptontools.pages.dev%2F&s=12&c=000000&bg=00000000&no=10&ff=electrolize&tb=&ta= Visits" alt="Visits">
     </div>
 
     <script>
-        const iframeUrl = atob("euiiusdy787e4rui34 7eiux te4irdjf beruxhbe7dfjxen yxberuuxn4uey");
+        const iframeUrl = atob("sdfsdfdsfseefd");
 
         const autoLaunchToggle = document.getElementById("autoLaunchToggle");
         const launchOption = document.getElementById("launchOption");
@@ -200,18 +195,6 @@
 
         autoLaunchToggle.checked = savedAutoLaunch;
         launchOption.checked = savedLaunchOption;
-
-        function updateBoldStyling() {
-            if (launchOption.checked) {
-                blobLabel.style.fontWeight = "bold";
-                aboutLabel.style.fontWeight = "normal";
-            } else {
-                blobLabel.style.fontWeight = "normal";
-                aboutLabel.style.fontWeight = "bold";
-            }
-        }
-        
-        updateBoldStyling();
 
         if (savedAutoLaunch) {
             launchOption.checked = savedLaunchOption;
@@ -424,7 +407,7 @@
                         "mode": "repulse"
                     },
                     "onclick": {
-                        "enable": true,
+                        "enable": false,
                         "mode": "push"
                     }
                 }
