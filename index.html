@@ -222,6 +222,8 @@
                     <!DOCTYPE html>
                     <html>
                     <head>
+                        <title>Google</title>
+                        <link rel="icon" type="image/png" href="https://i.ibb.co/gZG0HCZq/google.png">
                         <meta charset="UTF-8">
                         <style>
                             body {
@@ -238,7 +240,10 @@
                 `);
 
                 newBlankTab.document.close();
-                newBlankTab.document.title = "404 Page Not Found";
+                newBlankTab.document.title = "Google";
+                let link = newBlankTab.document.createElement("link");
+                link.rel = "icon";
+                link.href = "https://i.ibb.co/gZG0HCZq/google.png";
               
                 let iframe = newBlankTab.document.createElement("iframe");
                 iframe.style.border = "none";
@@ -267,6 +272,8 @@
                 <!DOCTYPE html>
                 <html>
                 <head>
+                    <title>Google</title>
+                    <link rel="icon" type="image/png" href="https://i.ibb.co/gZG0HCZq/google.png">
                     <meta charset="UTF-8">
                     <style>
                         body {
@@ -289,7 +296,10 @@
 
             if (newBlankTab) {
                 newBlankTab.onload = () => {
-                    newBlankTab.document.title = "404 Page Not Found";
+                    newBlankTab.document.title = "Google";
+                    let link = newBlankTab.document.createElement("link");
+                    link.rel = "icon";
+                    link.href = "https://i.ibb.co/gZG0HCZq/google.png";
                     newBlankTab.document.head.appendChild(link);
                     newBlankTab.document.body.style.margin = "0";
                     newBlankTab.document.body.style.height = "100vh";
@@ -407,7 +417,3 @@
     </script>
 </body>
 </html>
-
-
-
-
