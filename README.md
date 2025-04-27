@@ -2,10 +2,10 @@
 <img src="https://img.shields.io/github/release/Hydrogen172/Hydrogen.svg?color=82d2f0&labelColor=0d3b72&style=for-the-badge" alt="Release"/>
 
 # Discord:
-https://discord.gg/KDAfkj6PXp
+https://discord.gg/MG3F4M9B9v
 
 # Usage
-1. Find a working link (for you) here: https://tinyurl.com/kryptonlinks.
+1. Find a working link (for you) here: https://tinyurl.com/hydrogenlinks.
 2. There are 2 options to open Hydrogen with.
    about:blank cloaks with an about:blank URL
    blob:https cloaks with a blob:https followed by a temporary URL
