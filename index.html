@@ -109,30 +109,6 @@
             height: 0;
         }
 
-        .toggle-label {
-            margin: 0 10px;
-            transition: font-weight 0.3s ease;
-        }
-        
-        .toggle-label.active {
-            font-weight: bold;
-        }
-        
-        .second-toggle-container {
-            display: flex;
-            flex-direction: column;
-            margin-top: 20px;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
-        
-        .toggle.second-toggle {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
         .slider {
             position: absolute;
             cursor: pointer;
@@ -176,6 +152,11 @@
         .second-toggle input:checked + .slider:before {
             transform: translateX(26px);
         }
+        
+        /* Label style for toggle options */
+        .option-label {
+            margin: 0 10px;
+        }
     </style>
 </head>
 <body>
@@ -195,10 +176,10 @@
 
         <div class="second-toggle-container" id="secondToggleContainer" style="display: none;">
             <label class="toggle second-toggle" style="display: flex; align-items: center; justify-content: center;">
-                <span style="margin-right: 50px;">blob:https</span>
+                <span id="blobLabel" class="option-label" style="margin-right: 10px;">blob:https</span>
                 <input type="checkbox" id="launchOption">
                 <span class="slider"></span>
-                <span style="margin-left: 50px;">about:blank</span>
+                <span id="aboutLabel" class="option-label" style="margin-left: 10px;">about:blank</span>
             </label>
         </div>
         <h5>IF ABOUT:BLANK DOES NOT WORK, TRY BLOB:HTTPS</h5>
@@ -220,17 +201,17 @@
         autoLaunchToggle.checked = savedAutoLaunch;
         launchOption.checked = savedLaunchOption;
 
-        function updateBoldLabels() {
+        function updateBoldStyling() {
             if (launchOption.checked) {
-                blobLabel.classList.add("active");
-                aboutLabel.classList.remove("active");
+                blobLabel.style.fontWeight = "bold";
+                aboutLabel.style.fontWeight = "normal";
             } else {
-                blobLabel.classList.remove("active");
-                aboutLabel.classList.add("active");
+                blobLabel.style.fontWeight = "normal";
+                aboutLabel.style.fontWeight = "bold";
             }
         }
-
-        updateBoldLabels();
+        
+        updateBoldStyling();
 
         if (savedAutoLaunch) {
             launchOption.checked = savedLaunchOption;
