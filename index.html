@@ -207,7 +207,7 @@
         document.getElementById("secondToggleContainer").style.display = savedAutoLaunch ? "block" : "none";
 
         launchOption.addEventListener("change", () => {
-            localStorage.setItem("launchOption", launchOption.checked ? "about" : "blob");
+            localStorage.setItem("launchOption", launchOption.checked ? "blob" : "about");
         });
 
         document.getElementById("aboutBlankBtn").addEventListener("click", () => {
