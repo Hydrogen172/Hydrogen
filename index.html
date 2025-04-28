@@ -199,14 +199,11 @@
         if (savedAutoLaunch) {
             launchOption.checked = savedLaunchOption;
         }
-
-        autoLaunchToggle.addEventListener("change", () => {
-            localStorage.setItem("autoLaunch", autoLaunchToggle.checked);
-        });
         
         autoLaunchToggle.addEventListener("change", () => {
             localStorage.setItem("autoLaunch", autoLaunchToggle.checked);
             document.getElementById("secondToggleContainer").style.display = autoLaunchToggle.checked ? "block" : "none";
+            location.reload();
         });
         
         document.getElementById("secondToggleContainer").style.display = savedAutoLaunch ? "block" : "none";
