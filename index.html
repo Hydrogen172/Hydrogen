@@ -158,8 +158,8 @@
     <div id="particles-js"></div>
     <div class="container">
         <h3>Open With:</h3>
-        <button onclick="BlobWindow()">blob:https</button>
         <button id="aboutBlankBtn">about:blank</button>
+        <button onclick="BlobWindow()">blob:https</button>
 
         <div class="toggle-container">
             <h4>Auto Launch:</h4>
@@ -171,10 +171,10 @@
 
         <div class="second-toggle-container" id="secondToggleContainer" style="display: none;">
             <label class="toggle second-toggle" style="display: flex; align-items: center; justify-content: center;">
-                <span style="margin-right: 50px;">blob:https</span>
+                <span style="margin-right: 50px;">about:blank</span>
                 <input type="checkbox" id="launchOption">
                 <span class="slider"></span>
-                <span style="margin-left: 50px;">about:blank</span>
+                <span style="margin-left: 50px;">blob:https</span>
             </label>
         </div>
         <h5>A downloadable version is available <a href="https://drive.google.com/file/d/1v-iv6PeBHNjG08LNJBUGImNL7tkIQs3k/view?usp=sharing" target="_blank">here</a></h5>
@@ -207,7 +207,7 @@
         document.getElementById("secondToggleContainer").style.display = savedAutoLaunch ? "block" : "none";
 
         launchOption.addEventListener("change", () => {
-            localStorage.setItem("launchOption", launchOption.checked ? "blob" : "about");
+            localStorage.setItem("launchOption", launchOption.checked ? "about" : "blob");
         });
 
         document.getElementById("aboutBlankBtn").addEventListener("click", () => {
@@ -326,7 +326,7 @@
 
         window.onload = () => {
             if (autoLaunchToggle.checked) {
-                const launchType = launchOption.checked ? "about" : "blob";
+                const launchType = launchOption.checked ? "blob" : "about";
                 if (launchType === "blob") {
                     BlobWindow();
                 } else {
