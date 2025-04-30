@@ -2,7 +2,7 @@
 <img src="https://img.shields.io/github/release/Hydrogen172/Hydrogen.svg?color=82d2f0&labelColor=0d3b72&style=for-the-badge" alt="Release"/>
 
 # Discord:
-https://discord.gg/MG3F4M9B9v
+[discord․gg/hydrogenunblocker](http://discord.gg/MG3F4M9B9v)
 
 # Usage
 1. Find a working link (for you) here: https://tinyurl.com/hydrogenlinks.
