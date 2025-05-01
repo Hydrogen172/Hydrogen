@@ -6,15 +6,23 @@
 
 # Usage (MUST READ THIS)
 1. Find a working link (for you) here: https://tinyurl.com/hydrogenlinks.
+  <br>
    Or choose one from below:
+   <br>
    https://gohydrogen.pages.dev/ (recommended)
+   <br>
    https://gohydrogen.glitch.me/
+<br> 
    https://hydrogen172.github.io/Hydrogen/
-
+<br>
    There are 2 options to open Hydrogen with:
+<br>
    about:blank cloaks with an about:blank URL
+<br>
    blob:https opens with a blob:https followed by a temporary URL (this is not cloaked)
-2. clicking any of them will lead to a 404 page. **THIS IS A FAKE 404 PAGE**
+   <br>
+3. clicking any of them will lead to a 404 page. **THIS IS A FAKE 404 PAGE**
+   <br>
 4. type anywhere on the screen "404pnf" and click right shift. If it doesn't work, you typoed or started typing too early.
    Think of it as an invisible text box
 
